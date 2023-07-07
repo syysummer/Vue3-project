@@ -29,6 +29,11 @@ const router = createRouter({
       name: 'AsyncCom',
       component: () => import('@/views/Suspence/index.vue')
     },
+    {
+      path: '/TransitionCom',
+      name: 'TransitionCom',
+      component: () => import('@/views/TransitionCom.vue')
+    },
   ]
 })
 

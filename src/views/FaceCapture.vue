@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import * as faceapi from 'face-api.js'
 import { onMounted, ref, reactive, toRefs } from 'vue'
-import type { UploadFile } from 'element-plus'
 
 const inputRef = ref<any>(null)
 
