@@ -1,29 +1,29 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import FaceCapture from '../views/FaceCapture.vue'
+import IndexDbPage from '../views/IndexDB/index.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'FaceCapture',
-      component: FaceCapture
+      name: 'IndexDbPage',
+      component: IndexDbPage
     },
     {
       path: '/WaterFallFlow',
       name: 'WaterFallFlow',
       component: () => import('@/views/WaterFallFlow.vue'),
     },
-    // {
-    //   path: '/FaceCapture',
-    //   name: 'FaceCapture',
-    //   component: () => import('@/views/FaceCapture.vue')
-    // },
     {
-      path: '/NavTree',
-      name: 'NavTree',
-      component: () => import('@/views/NavTree.vue')
+      path: '/FaceCapture',
+      name: 'FaceCapture',
+      component: () => import('@/views/FaceCapture.vue')
     },
+    // {
+    //   path: '/NavTree',
+    //   name: 'NavTree',
+    //   component: () => import('@/views/NavTree/index.vue')
+    // },
     {
       path: '/AsyncCom',
       name: 'AsyncCom',
